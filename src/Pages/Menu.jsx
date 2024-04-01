@@ -10,14 +10,15 @@ const Menu = () => {
       <h2>Our Menu</h2>
 
       <div className="popular__container container grid">
-        <article className="popular__card">
+        <article className="popular__card f">
           <img src={popularImage1} className="popular__img" alt="Popular Dish" />
           <h3>Chicken Tikka</h3>
           <span className="popular__description">Punjabi Dish</span>
-          <span className="popular__price">Rs 450</span>
-          <button className="popular__button">
-            <i className="ri-shopping-bag-line"></i>
+          {/* <span className="popular__price">Rs 450</span> */}
+          <button className="popular__button  ">
+          <i className="ri-shopping-bag-line">Vegetarian Food</i>
           </button>
+          
         </article>
 
         {/* Repeat the same structure for remaining articles, replacing image sources */}
@@ -25,9 +26,10 @@ const Menu = () => {
           <img src={popularImage1} className="popular__img" alt="Popular Dish" />
           <h3>Chicken Tikka</h3>
           <span className="popular__description">Punjabi Dish</span>
-          <span className="popular__price">Rs 450</span>
+          {/* <span className="popular__price">Rs 450</span> */}
           <button className="popular__button">
-            <i className="ri-shopping-bag-line"></i>
+            
+            <i className="ri-shopping-bag-line">Non-Veg Food</i>
           </button>
         </article>
 
@@ -35,9 +37,9 @@ const Menu = () => {
           <img src={popularImage1} className="popular__img" alt="Popular Dish" />
           <h3>Chicken Tikka</h3>
           <span className="popular__description">Punjabi Dish</span>
-          <span className="popular__price">Rs 450</span>
+          {/* <span className="popular__price">Rs 450</span> */}
           <button className="popular__button">
-            <i className="ri-shopping-bag-line"></i>
+            <i className="ri-shopping-bag-line"> Punjabi Food </i>
           </button>
         </article>
 
@@ -47,9 +49,9 @@ const Menu = () => {
           <img src={img40} className="popular__img" alt="Popular Dish" />
           <h3>Paneer Tikka</h3>
           <span className="popular__description">Indian Dish</span>
-          <span className="popular__price">Rs 250</span>
+          {/* <span className="popular__price">Rs 250</span> */}
           <button className="popular__button">
-            <i className="ri-shopping-bag-line"></i>
+            <i className="ri-shopping-bag-line">Indian Food </i>
           </button>
         </article>
 
@@ -57,9 +59,9 @@ const Menu = () => {
           <img src={popular3} className="popular__img" alt="Popular Dish" />
           <h3>Tandoori Chicken</h3>
           <span className="popular__description">Japanese Dish</span>
-          <span className="popular__price">Rs 350</span>
+          {/* <span className="popular__price">Rs 350</span> */}
           <button className="popular__button">
-            <i className="ri-shopping-bag-line"></i>
+            <i className="ri-shopping-bag-line">Chinease Food</i>
           </button>
         </article>
       </div>

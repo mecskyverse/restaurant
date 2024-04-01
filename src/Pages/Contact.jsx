@@ -17,9 +17,9 @@ const Contact = () => {
                         <ul className="info">
                             <li>
                                 <span><img src={locationImage} alt="Location" /></span>
-                                <span>A block <br />
-                                    shop no.999<br />
-                                    Atal Colony Ujjain.
+                                <span>Lorem, ipsum dolor. <br />
+                                    Lorem ipsum dolor sit.<br />
+                                    Lorem, ipsum..
                                 </span>
                             </li>
                             <li>

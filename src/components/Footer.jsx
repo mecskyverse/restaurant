@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImage from '../assets/img/logo.png'
+import logoImage from '../assets/img/LOGO_Finalpng.png'
 import springOnionImage from '../assets/img/spring-onion.png';
 import spinachLeafImage from '../assets/img/spinach-leaf.png';
 import leafBranch4Image from '../assets/img/leaf-branch-4.png';
@@ -64,7 +64,7 @@ const Footer = () => {
                         <h3 className="footer__title">Address</h3>
                         <ul className="footer__links">
                             <li className="footer__information">
-                                A block shop no.999 <br /> Atal Colony Ujjain.
+                                Lorem, ipsum dolor. <br /> Lorem, ipsum dolor..
                             </li>
                             <li className="footer__information">
                                 9AM - 11PM

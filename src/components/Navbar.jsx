@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import for using Link components in navigation
-import logoImage from '../assets/img/logo.png';
+import logoImage from '../assets/img/LOGO_Finalpng.png';
 import leafBranch4 from '../assets/img/leaf-branch-4.png'; // Import for leaf-branch-4.png
 import leafBranch3 from '../assets/img/leaf-branch-3.png'; // Import for leaf-branch-3.png
 
@@ -15,7 +15,7 @@ const Navbar = () => {
         <header className="header" id="header">
             <nav className="nav container">
                 <Link to="/" className="nav__logo">
-                    <img src={logoImage} alt="logo image" />
+                    <img src={logoImage}  alt="logo image" />
                     Delux Dabha
                 </Link>
 

@@ -9,10 +9,11 @@ import homeSushiTitle from '../assets/img/home-sushi-title.png'
 import spinachLeaf from '../assets/img/spinach-leaf.png';
 import salad from '../assets/img/Salad.png';
 import popular3 from '../assets/img/popular3.png';
+import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <>
-            <section className="home section" id="home">
+            <section className=" home section flex " id="home">
                 <div className="home__container container grid">
                     <div className="home_container_img">
                         <img src={img40} alt="home image" className="home__img" />
@@ -40,9 +41,10 @@ const Home = () => {
                         <p className="home__description">
                             Enjoy a good dinner with the best dishes in the Restorant and improve your day.
                         </p>
-                        <a href="#" className="button">
+                        <Link to="/Menu" className="button">
                             Order Now <i className="ri-arrow-right-line"></i>
-                        </a>
+                        </Link>
+                       
                     </div>
                 </div>
 
@@ -52,7 +54,7 @@ const Home = () => {
                     <i className="ri-arrow-up-line"></i>
                 </a>
             </section>
-            <About />
+            {/* <About /> */}
             <section className="recently section" id="recently">
                 <div className="recently__container container grid">
                     <div className="recently__data">

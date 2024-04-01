@@ -17,7 +17,7 @@ const About = () => {
                         Healthy Food
                     </h2>
                     <p className="about__description">
-                        Food comes to us from our relatives, whether they have wings or roots. This is how we consider food, it also has a culture. It has a history that passes from generation to generation.
+                        Food comes to us from our relatives, whether they have wings or roots. This is how we consider food, it also has a culture. It has a history that passes from generation to generation. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur ut dignissimos quidem asperiores perspiciatis velit suscipit neque enim nisi amet. Soluta iste vitae eum, dicta neque laboriosam sint natus.
                     </p>
                 </div>
                 <img src={aboutImage} className="about__img" alt="about image" />
