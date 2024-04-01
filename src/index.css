@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -262,12 +263,6 @@ body.dark-theme {
   }
 }
 
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  row-gap: 2rem;
-}
 
 .nav__link {
   color: var(--title-color);
@@ -931,11 +926,6 @@ body.dark-theme {
   .nav__img-1,
   .nav__img-2 {
     display: none;
-  }
-
-  .nav__list {
-    flex-direction: row;
-    column-gap: 3rem;
   }
 
   .nav__menu {

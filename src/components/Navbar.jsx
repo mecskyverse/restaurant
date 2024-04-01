@@ -5,11 +5,7 @@ import leafBranch4 from '../assets/img/leaf-branch-4.png'; // Import for leaf-br
 import leafBranch3 from '../assets/img/leaf-branch-3.png'; // Import for leaf-branch-3.png
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = React.useState(false); // State for managing menu visibility
-
-    const handleMenuToggle = () => {
-        setIsOpen(!isOpen); // Toggle menu open/closed state
-    };
+    const [showSidebar, setShowSidebar] = React.useState(false);
 
     return (
         <header className="header" id="header">
@@ -18,8 +14,21 @@ const Navbar = () => {
                     <img src={logoImage}  alt="logo image" />
                     Delux Dabha
                 </Link>
-
-                <ul className={`nav__list ${isOpen ? 'nav__list--active' : ''}`}> {/* Add conditional class for active menu */}
+                <ul className={`md:hidden gap-3 flex-col absolute top-0 right-0 p-5 justify-center h-screen w-[250px] bg-[#fff1eb]  flex ${showSidebar ? '' : 'hidden'}`}>
+                    <li className="nav__item">
+                        <Link to="/" className="nav__link">Home</Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link to="/about" className="nav__link">About Us</Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link to="/menu" className="nav__link">Menu</Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link to="/contactUs" className="nav__link">Contact Us</Link>
+                    </li>
+                </ul>
+                <ul className={`md:flex hidden nav__list gap-10 justify-center bg-[#fff1eb]   `}>
                     <li className="nav__item">
                         <Link to="/" className="nav__link">Home</Link>
                     </li>
@@ -34,21 +43,21 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <div className="nav__close" id="nav-close" onClick={handleMenuToggle}>
-                    <i className="ri-close-line"></i>
+                <div className={`nav__clos absolute top-3 cursor-pointer right-3 z-10 flex m-[20px] md:hidden ${showSidebar ? '' : 'hidden'}`} id="nav-close" onClick={() => setShowSidebar(!showSidebar)}>
+                    <i className="ri-close-line text-3xl"></i>
                 </div>
 
                 <img src={leafBranch4} alt="nav image" className="nav__img-1" />
                 <img src={leafBranch3} alt="nav image" className="nav__img-2" />
 
-                <div className="nav__buttons">
+                <div className={`nav__buttons `}>
                     <i className="ri-moon-line change-theme" id="theme-button"></i> {/* Placeholder for theme change functionality */}
-                    <div className="nav__toggle" id="nav-toggle" onClick={handleMenuToggle}>
+                    <div className="nav__toggle" id="nav-toggle" onClick={() => setShowSidebar(!showSidebar)}>
                         <i className="ri-apps-2-line"></i>
                     </div>
                 </div>
             </nav>
-        </header>
+        </header >
     );
 };
 
