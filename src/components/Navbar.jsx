@@ -9,9 +9,9 @@ const Navbar = () => {
 
     return (
         <header className="header" id="header">
-            <nav className="nav container">
+            <nav className="nav px-3">
                 <Link to="/" className="nav__logo">
-                    <img src={logoImage}  alt="logo image" />
+                    <img src={logoImage} alt="logo image" />
                     Delux Dabha
                 </Link>
                 <ul className={`md:hidden gap-3 flex-col absolute top-0 right-0 p-5 justify-center h-screen w-[250px] bg-[#fff1eb]  flex ${showSidebar ? '' : 'hidden'}`}>
